@@ -1,2 +1,4 @@
-# desenvolve-introdu-o-web
-Repositório de atividades do curso de desenvolvimento web
+# desenvolve-introducao-web
+Projeto Desenvolve Itabira
+PDITA762
+Introdução a progamação Web
