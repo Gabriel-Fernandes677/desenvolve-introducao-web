@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Satisfação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .radios, .checkbox {
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pesquisa de Satisfação</h1>
+
+  <form action="#" method="post">
+
+    <!-- Parte A: Dados Pessoais -->
+    <fieldset>
+      <legend><strong>Dados Pessoais</strong></legend>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+    </fieldset>
+
+    <!-- Parte B: Pesquisa -->
+    <fieldset>
+      <legend><strong>Pesquisa</strong></legend>
+
+      <!-- Pergunta 1 -->
+      <label>Como você avalia nosso atendimento?</label>
+      <div class="radios">
+        <input type="radio" id="excelente" name="atendimento" value="excelente" required>
+        <label for="excelente">Excelente</label><br>
+
+        <input type="radio" id="bom" name="atendimento" value="bom">
+        <label for="bom">Bom</label><br>
+
+        <input type="radio" id="regular" name="atendimento" value="regular">
+        <label for="regular">Regular</label><br>
+
+        <input type="radio" id="ruim" name="atendimento" value="ruim">
+        <label for="ruim">Ruim</label>
+      </div>
+
+      <!-- Pergunta 2 -->
+      <label>Você recomendaria nossa empresa a um amigo?</label>
+      <div class="radios">
+        <input type="radio" id="sim" name="recomendaria" value="sim" required>
+        <label for="sim">Sim</label><br>
+
+        <input type="radio" id="nao" name="recomendaria" value="nao">
+        <label for="nao">Não</label>
+      </div>
+
+      <!-- Pergunta 3 -->
+      <label for="frequencia">Com que frequência você utiliza nossos serviços?</label>
+      <select id="frequencia" name="frequencia" required>
+        <option value="" disabled selected>Selecione</option>
+        <option value="frequente">Frequentemente</option>
+        <option value="ocasional">Ocasionalmente</option>
+        <option value="primeira_vez">É minha primeira vez</option>
+      </select>
+
+      <!-- Checkbox de autorização -->
+      <div class="checkbox">
+        <input type="checkbox" id="autorizacao" name="autorizacao">
+        <label for="autorizacao">Autorizo o compartilhamento da minha resposta com terceiros</label>
+      </div>
+    </fieldset>
+
+    <!-- Botão de envio -->
+    <button type="submit">Enviar Resposta</button>
+
+  </form>
+
+</body>
+</html>
